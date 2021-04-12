@@ -16,7 +16,6 @@ function fetch_all($query)
 	$data = array();
 	global $connection;
 	$result = $connection->query($query);
-	 
 	while($row = mysqli_fetch_assoc($result)) 
 	{
 		$data[] = $row;
@@ -35,8 +34,8 @@ function fetch_record($query)
 function run_mysql_query($query)
 {
 	global $connection;
- 	$result = $connection->query($query);
- 	return $connection->insert_id;
+	$result = $connection->query($query);
+	return $connection->insert_id;
 }
 
 function escape_this_string($string)

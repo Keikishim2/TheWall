@@ -6,14 +6,14 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<title>Register</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="header">
-		<h1>CodingDojo Wall</h1>
+		<h1>Village88 The Wall!</h1>
 	</div>
 	<form class="index" action="process.php" method="post">
-		<h2 class="index">Register</h1>
+		<h2 class="index">Register</h2>
 <?php 	if(!empty($_SESSION['regErr'])) {
 			foreach($_SESSION['regErr'] as $message) {
 				echo '<p class="red">- ' . $message . ' -</p>';
